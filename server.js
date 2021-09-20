@@ -126,8 +126,8 @@ app.post('/contactUS', (req, res)=>{
        service:'hotmail',
         secure: false,
         auth: {
-           user: '',
-           pass: ''
+           user: 'Cuentaprueba540540@hotmail.com',
+           pass: 'AAA123123!'
             
 
             
@@ -135,7 +135,7 @@ app.post('/contactUS', (req, res)=>{
     })
     const mailOptions = {
         from: req.body.email,
-        to: 'joacocra99@hotmail.com',
+        to: 'Cuentaprueba540540@hotmail.com',
         subject: `message from ${req.body.email}: ${req.body.subject}`,
         text: req.body.message
     }
